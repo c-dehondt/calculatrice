@@ -24,40 +24,38 @@
         <h1>Calculatrice</h1>
         <div class="row container">
           <div class="info col-12" id="resultat"></div>
-          <table>
+          <table class="table table-bordered table-inverse">
                 <tr>
-                    <td><button class="btn btn-warning" onclick="reset()">CE</button></td>
-                    <td><button class="btn btn-warning" value="←" onclick="retour() "type="button">←</button></td>
-                    <td><button class="btn btn-warning chiffre" value="" type="button" title="modulo">%</button></td>
-                    <td><button class="btn btn-warning chiffre" value="+" type="button">+</button></td>
+                    <td colspan="2" class="" value="CE" onclick="reset()">CE</td>
+                    <td  class="" value="←" onclick="retour()" >←</td>
+                    <td class="chiffre" value="+">+</td>
                 </tr>
 
                 <tr>
-                    <td><button class="chiffre btn btn-warning chiffre" value="7" type="button">7</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="8" type="button">8</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="9" type="button">9</button></td>
-                    <td><button class="btn btn-warning chiffre" value="-" type="button">-</button></td>
+                    <td class="chiffre">7</td>
+                    <td class="chiffre">8</td>
+                    <td class="chiffre">9</td>
+                    <td class="chiffre">-</td>
                 </tr>
 
                 <tr>
-                    <td><button class="chiffre btn btn-warning chiffre" value="4" type="button">4</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="5" type="button">5</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="6" type="button">6</button></td>
-                    <td><button class="btn btn-warning chiffre" value="*" type="button">×</button></td>
+                    <td class="chiffre">4</td>
+                    <td class="chiffre">5</td>
+                    <td class="chiffre">6</td>
+                    <td class="chiffre">x</td>
                 </tr>
 
                 <tr>
-                    <td><button class="chiffre btn btn-warning chiffre" value="1" type="button">1</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="2" type="button">2</button></td>
-                    <td><button class="chiffre btn btn-warning chiffre" value="3" type="button">3</button></td>
-                    <td><button class="btn btn-warning chiffre" value="/" type="button">÷</button></td>
+                    <td class="chiffre">1</td>
+                    <td class="chiffre">2</td>
+                    <td class="chiffre">3</td>
+                    <td class="chiffre">/</td>
                 </tr>
 
                 <tr>
-                    <td><button class="chiffre btn btn-warning" value="0" type="button">0</button></td>
-                    <td><button class="btn btn-warning chiffre" value="" type="button">±</button></td>
-                    <td><button class="btn btn-warning chiffre" value="." type="button">,</button></td>
-                    <td><button class="btn btn-warning chiffre" value="=" type="button">=</button></td>
+                    <td class="chiffre">0</td>
+                    <td class="chiffre">.</td>
+                    <td colspan="2" class="chiffre">=</td>
                 </tr>
             </table>
         </div>

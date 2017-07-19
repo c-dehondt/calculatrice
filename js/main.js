@@ -10,21 +10,21 @@ window.location.reload();
 }
 
 function retour() {
-    chiffre = chiffre.substring(1);
+    total= total.substring(0, total.length -1);
+    calcul.innerHTML=total ;
 }
 
-  for (var i = 0; i < chiffre.length; i++) {
+  for (let i = 0; i < chiffre.length; i++) {
     chiffre[i].onclick = function () {
 
-      if (this.value == "=") {
+      if (this.textContent == "=") {
         temp.push(eval(total));
         console.log(temp);
         calcul.innerHTML= temp[temp.length -1];
 
-
       }
       else{
-      total += this.value;
+      total += this.textContent;
       calcul.innerHTML = total;
     }
   }

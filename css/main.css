@@ -1,5 +1,9 @@
 .info{
-  border: 1px solid black;
+  border: 1px solid;
   height: 50px;
   width:150px;
+}
+
+td.hover{
+  background-color: white;
 }

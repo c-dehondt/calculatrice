@@ -10,12 +10,58 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mdp.css">
+        <link rel="stylesheet" href="css/mdp.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      
+      <main class="container">
+        <h1>Calculatrice</h1>
+        <div class="row container">
+          <div class="info col-12" id="resultat"></div>
+          <table>
+                <tr>
+                    <td><button class="btn btn-warning" onclick="reset()">CE</button></td>
+                    <td><button class="btn btn-warning" value="←" onclick="retour() "type="button">←</button></td>
+                    <td><button class="btn btn-warning chiffre" value="" type="button" title="modulo">%</button></td>
+                    <td><button class="btn btn-warning chiffre" value="+" type="button">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="chiffre btn btn-warning chiffre" value="7" type="button">7</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="8" type="button">8</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="9" type="button">9</button></td>
+                    <td><button class="btn btn-warning chiffre" value="-" type="button">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="chiffre btn btn-warning chiffre" value="4" type="button">4</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="5" type="button">5</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="6" type="button">6</button></td>
+                    <td><button class="btn btn-warning chiffre" value="*" type="button">×</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="chiffre btn btn-warning chiffre" value="1" type="button">1</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="2" type="button">2</button></td>
+                    <td><button class="chiffre btn btn-warning chiffre" value="3" type="button">3</button></td>
+                    <td><button class="btn btn-warning chiffre" value="/" type="button">÷</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="chiffre btn btn-warning" value="0" type="button">0</button></td>
+                    <td><button class="btn btn-warning chiffre" value="" type="button">±</button></td>
+                    <td><button class="btn btn-warning chiffre" value="." type="button">,</button></td>
+                    <td><button class="btn btn-warning chiffre" value="=" type="button">=</button></td>
+                </tr>
+            </table>
+        </div>
+      </main>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

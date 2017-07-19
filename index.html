@@ -21,10 +21,12 @@
     </head>
     <body>
       <main class="container">
-        <h1>Calculatrice</h1>
-        <div class="row container">
-          <div class="info col-12" id="resultat"></div>
-          <table class="table table-bordered table-inverse">
+        <h1 class="text-center">Calculatrice</h1>
+        <div class="row container card">
+          <table class="table table-bordered table-inverse text-center">
+                <tr>
+                    <td colspan="4" id="resultat">0</td>
+                </tr>
                 <tr>
                     <td colspan="2" class="" value="CE" onclick="reset()">CE</td>
                     <td  class="" value="←" onclick="retour()" >←</td>
@@ -42,7 +44,7 @@
                     <td class="chiffre">4</td>
                     <td class="chiffre">5</td>
                     <td class="chiffre">6</td>
-                    <td class="chiffre">x</td>
+                    <td class="chiffre">*</td>
                 </tr>
 
                 <tr>
@@ -55,7 +57,7 @@
                 <tr>
                     <td class="chiffre">0</td>
                     <td class="chiffre">.</td>
-                    <td colspan="2" class="chiffre">=</td>
+                    <td colspan="2" class="chiffre bg-warning">=</td>
                 </tr>
             </table>
         </div>

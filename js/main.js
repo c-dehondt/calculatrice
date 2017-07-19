@@ -4,7 +4,6 @@ var total="";
 var temp=[];
 var reset;
 
-
 function reset() {
 window.location.reload();
 }
@@ -19,13 +18,12 @@ function retour() {
 
       if (this.textContent == "=") {
         temp.push(eval(total));
-        console.log(temp);
         calcul.innerHTML= temp[temp.length -1];
-
+        total = temp[temp.length -1];
       }
       else{
-      total += this.textContent;
-      calcul.innerHTML = total;
+        total += this.textContent;
+        calcul.innerHTML = total;
     }
   }
 }

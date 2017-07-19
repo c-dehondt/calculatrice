@@ -1,9 +1,10 @@
-.info{
-  border: 1px solid;
-  height: 50px;
-  width:150px;
+#resultat{
+  font-size: 225%;
 }
 
-td.hover{
-  background-color: white;
+.calculatrice{
+  margin: auto;
+  width:90%;
+  height: 300px;
+  background-color: red;
 }

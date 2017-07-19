@@ -4,6 +4,7 @@ var total="";
 var temp=[];
 var reset;
 
+
 function reset() {
 window.location.reload();
 }

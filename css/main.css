@@ -2,9 +2,6 @@
   font-size: 225%;
 }
 
-.calculatrice{
-  margin: auto;
-  width:90%;
-  height: 300px;
-  background-color: red;
+.operation{
+  font-weight: bold;
 }
